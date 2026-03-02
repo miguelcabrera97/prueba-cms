@@ -2,7 +2,7 @@ backend:
   name: github
   repo: miguelcabrera97/prueba-cms   # <-- Cambia esto
   branch: main
-  base_url: "" # Esto apuntará automáticamente a /auth y /callback en el mismo dominio
+  base_url: https://prueba-cms.pages.dev # Reemplaza esto con tu dominio real
 
 media_folder: "images"
 public_folder: "/images"
