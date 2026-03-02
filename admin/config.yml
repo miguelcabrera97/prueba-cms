@@ -2,7 +2,7 @@ backend:
   name: github
   repo: miguelcabrera97/prueba-cms   # <-- Cambia esto
   branch: main
-  base_url: https://sveltia-cms-auth.pages.dev
+  base_url: "" # Esto apuntará automáticamente a /auth y /callback en el mismo dominio
 
 media_folder: "images"
 public_folder: "/images"
