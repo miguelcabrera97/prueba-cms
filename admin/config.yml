@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: TU_USUARIO/TU_REPOSITORIO   # <-- Cambia esto
+  repo: miguelcabrera97/prueba-cms   # <-- Cambia esto
   branch: main
 
 media_folder: "images"
