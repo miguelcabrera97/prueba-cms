@@ -1,54 +1,71 @@
 {
-    "business_name": "Arepa Station",
-    "tagline": "Authentic Venezuelan Cuisine",
-    "footer_description": "Bringing the authentic taste of Venezuela to Virginia. A cultural bridge built on masa and love.",
-    "founded_year": "2023",
-    "hero_badge": "Authentic Venezuelan Flavors",
-    "hero_title": "Una arepa es un abrazo en forma de masa",
-    "hero_subtitle": "Experience the authentic taste of Venezuela right here in Glen Allen. Homemade, fresh, and full of history.",
-    "hero_cta_primary": "Order Now",
-    "hero_cta_secondary": "Our Story",
-    "address": "123 Broad Street, Glen Allen, VA 23060",
-    "phone": "(804) 555-0123",
-    "email": "hello@arepastation.com",
-    "whatsapp": "18045550123",
-    "hours": [
-        {
-            "days": "Mon - Thu",
-            "time": "11:00 AM - 9:00 PM"
-        },
-        {
-            "days": "Fri - Sat",
-            "time": "11:00 AM - 10:00 PM"
-        },
-        {
-            "days": "Sunday",
-            "time": "12:00 PM - 8:00 PM"
-        }
-    ],
-    "features": [
-        {
-            "icon": "storefront",
-            "title": "Family-Owned",
-            "description": "A family business rooted in Venezuelan tradition, serving our community with pride."
-        },
-        {
-            "icon": "local_fire_department",
-            "title": "Freshly Made",
-            "description": "Every arepa is hand-formed and cooked to order, never frozen, always fresh."
-        },
-        {
-            "icon": "favorite",
-            "title": "Made with Love",
-            "description": "Our recipes are passed down through generations, packed with authentic flavor."
-        },
-        {
-            "icon": "eco",
-            "title": "Local Ingredients",
-            "description": "We source our ingredients locally whenever possible to support our community."
-        }
-    ],
+  "contact": {
+    "address": "#",
+    "phone": "#",
+    "email": "#",
+    "whatsapp": "#"
+  },
+  "social_instagram": "#",
+  "hero_cta_secondary": "Our Story",
+  "business_name": "Arepa Station",
+  "social": {
     "social_facebook": "#",
-    "social_instagram": "#",
-    "copyright_year": "2023"
+    "social_instagram": "#"
+  },
+  "phone": "(804) 555-0123",
+  "hero_cta_primary": "Order Now",
+  "tagline": "Autentica comida de venezuela",
+  "hours": [
+    {
+      "days": "Mon - Thu",
+      "time": "11:00 AM - 9:00 PM"
+    },
+    {
+      "days": "Fri - Sat",
+      "time": "11:00 AM - 10:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "12:00 PM - 8:00 PM"
+    }
+  ],
+  "whatsapp": "18045550123",
+  "hero_title": "Una arepa es un abrazo en forma de masa",
+  "address": "123 Broad Street, Glen Allen, VA 23060",
+  "copyright_year": "2023",
+  "footer_description": "Bringing the authentic taste of Venezuela to Virginia. A cultural bridge built on masa and love.",
+  "social_facebook": "#",
+  "hero": {
+    "hero_badge": "Hola",
+    "hero_title": "prueba",
+    "hero_subtitle": "esta es una prueba",
+    "hero_cta_primary": "click",
+    "hero_cta_secondary": "click 2 "
+  },
+  "founded_year": "2023",
+  "email": "hello@arepastation.com",
+  "features": [
+    {
+      "icon": "storefront",
+      "title": "Family-Owned",
+      "description": "A family business rooted in Venezuelan tradition, serving our community with pride."
+    },
+    {
+      "icon": "local_fire_department",
+      "title": "Freshly Made",
+      "description": "Every arepa is hand-formed and cooked to order, never frozen, always fresh."
+    },
+    {
+      "icon": "favorite",
+      "title": "Made with Love",
+      "description": "Our recipes are passed down through generations, packed with authentic flavor."
+    },
+    {
+      "icon": "eco",
+      "title": "Local Ingredients",
+      "description": "We source our ingredients locally whenever possible to support our community."
+    }
+  ],
+  "hero_subtitle": "Experience the authentic taste of Venezuela right here in Glen Allen. Homemade, fresh, and full of history.",
+  "hero_badge": "Authentic Venezuelan Flavors"
 }
