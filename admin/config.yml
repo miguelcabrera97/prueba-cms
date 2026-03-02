@@ -1,0 +1,66 @@
+backend:
+  name: github
+  repo: TU_USUARIO/TU_REPOSITORIO   # <-- Cambia esto
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+# Edición directa del archivo data.json
+collections:
+  - name: "sitio"
+    label: "Contenido del Sitio"
+    files:
+
+      - label: "Información General"
+        name: "general"
+        file: "data.json"
+        fields:
+          - { label: "Nombre del negocio",  name: "business_name",       widget: "string" }
+          - { label: "Slogan / Tagline",     name: "tagline",             widget: "string" }
+          - { label: "Descripción (footer)", name: "footer_description",  widget: "text" }
+          - { label: "Año de fundación",     name: "founded_year",        widget: "string" }
+
+          - label: "Sección Hero"
+            name: "hero"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Etiqueta superior", name: "hero_badge",         widget: "string" }
+              - { label: "Título principal",  name: "hero_title",         widget: "string" }
+              - { label: "Subtítulo",         name: "hero_subtitle",      widget: "text" }
+              - { label: "Botón principal",   name: "hero_cta_primary",   widget: "string" }
+              - { label: "Botón secundario",  name: "hero_cta_secondary", widget: "string" }
+
+          - label: "Contacto"
+            name: "contact"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Dirección",  name: "address",   widget: "string" }
+              - { label: "Teléfono",   name: "phone",     widget: "string" }
+              - { label: "Email",      name: "email",     widget: "string" }
+              - { label: "WhatsApp (con código de país, sin +)", name: "whatsapp", widget: "string" }
+
+          - label: "Horarios"
+            name: "hours"
+            widget: "list"
+            fields:
+              - { label: "Días",    name: "days", widget: "string" }
+              - { label: "Horario", name: "time", widget: "string" }
+
+          - label: "Características / Features"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Icono (Material Symbol)", name: "icon",        widget: "string" }
+              - { label: "Título",                  name: "title",       widget: "string" }
+              - { label: "Descripción",             name: "description", widget: "text" }
+
+          - label: "Redes Sociales"
+            name: "social"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Facebook URL", name: "social_facebook",  widget: "string" }
+              - { label: "Instagram URL", name: "social_instagram", widget: "string" }

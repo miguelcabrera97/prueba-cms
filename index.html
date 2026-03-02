@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title data-content="title">Arepa Station - Authentic Venezuelan Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#d41135", // Deep Red
+                        secondary: "#FFD100", // Venezuelan Yellow
+                        tertiary: "#00247D", // Venezuelan Blue
+                        "background-light": "#ffffff",
+                        "background-dark": "#1a1a1a",
+                        "text-main": "#1b0d10",
+                        "text-muted": "#6b5d60",
+                    },
+                    fontFamily: {
+                        display: ["Plus Jakarta Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        "2xl": "1.5rem",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display antialiased text-text-main dark:text-white transition-colors duration-200">
+    <div class="flex flex-col min-h-screen">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full bg-background-light/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 dark:bg-background-dark/95">
+            <div class="px-4 md:px-10 lg:px-20 py-4 flex items-center justify-between mx-auto max-w-[1280px]">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 text-primary">
+                        <svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white" data-content="business_name">Arepa Station</h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Menu</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Our Story</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden sm:flex bg-primary hover:bg-red-700 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg hover:shadow-red-500/20">
+                        Order Online
+                    </button>
+                    <!-- Mobile Menu Icon -->
+                    <button class="md:hidden text-gray-900 dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="relative">
+                <div class="w-full min-h-[600px] flex items-center justify-center bg-cover bg-center relative"
+                    data-alt="Delicious steaming arepa with fresh fillings on a table"
+                    style='background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn_EwISu6mfv2WB4byYgwxoBQPEJ9FPr4PNcKKRS_tezM_rBbVevzCCqspsroqDjSxJqEAmFD9BDM4XRW_Ct2bgSTAWs2a_xXIFks8r77MEL_qzZsJAD3xyV3hrtHvMlWjYqRSaz5_9688y0k2VwQsHxfdMlnR74LecHYuAvCGZ-nHZXJZGNPVoEOimqTIXhIa9O1MTnkbzfGtZJg8cYHWaLdjXZEpcOdwI7WXZ9WnNqUq_7B5iw4zsdg5n7yb1-zqZAnGKNUhdXo");'>
+                    <div class="relative z-10 px-6 text-center max-w-4xl mx-auto flex flex-col items-center gap-6">
+                        <span
+                            class="inline-block px-3 py-1 bg-secondary text-yellow-900 text-xs font-bold uppercase tracking-wider rounded-full mb-2" data-content="hero_badge">Authentic
+                            Venezuelan Flavors</span>
+                        <h1
+                            class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight tracking-tight drop-shadow-sm" data-content="hero_title">
+                            Una arepa es un abrazo en forma de masa
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-100 max-w-2xl font-light" data-content="hero_subtitle">
+                            Experience the authentic taste of Venezuela right here in Glen Allen. Homemade, fresh, and
+                            full of history.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-4 mt-4">
+                            <button
+                                class="bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full text-base font-bold transition-all shadow-xl hover:shadow-red-500/30 min-w-[160px]">
+                                Order Now
+                            </button>
+                            <button
+                                class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full text-base font-bold transition-all min-w-[160px]">
+                                Our Story
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative wave bottom -->
+                <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+                    <svg class="relative block w-[calc(100%+1.3px)] h-[50px] md:h-[100px]" data-name="Layer 1"
+                        preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-background-light dark:fill-background-dark"
+                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z">
+                        </path>
+                    </svg>
+                </div>
+            </section>
+            <!-- Three Audiences Section -->
+            <section class="py-20 px-4 md:px-10 lg:px-20 max-w-[1280px] mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Welcome to Arepa
+                        Station</h2>
+                    <p class="text-text-muted dark:text-gray-400 text-lg max-w-2xl mx-auto">
+                        Whether you are looking for a taste of home or a new culinary adventure, we have a seat at the
+                        table for you.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Nostalgic -->
+                    <div class="group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl aspect-[4/3] mb-6 relative">
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Traditional Venezuelan family meal setting"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJqi15A2fkaIZ1Fw-b7uhUO9w1dP2S1LxVV1jo6pacDKgNhd2lnT-jourvSAIA8Mw_5xUqRt12H7Q1LJh_XagTnrD0ISr12ZSpDT1G38GZoNB0cuKezVBiXlv8MAKsxFn06O0kriIa8U0amJ5Evod1WV6Y6YnRWec_RVyFj8c6UKKcWxsCu_kQigI7adRqAuA-4HSw9Nun6YMNspvHQVRqC8QyBfwWWjRUP_H7b97pLNNHvNlcFbt4-_3rGIUbtZYuSidZ2Z822Ug");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-2 text-primary">
+                                <span class="material-symbols-outlined">home</span>
+                                <span class="text-xs font-bold uppercase tracking-wider">The Nostalgic</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Taste of Home</h3>
+                            <p class="text-text-muted dark:text-gray-400">Reconnect with the flavors of your childhood.
+                                Authentic ingredients that bring memories back.</p>
+                        </div>
+                    </div>
+                    <!-- Curious -->
+                    <div class="group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl aspect-[4/3] mb-6 relative">
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Colorful spices and raw ingredients for cooking"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQRqK64clZj7bxgkantErDKUjDj4nUwLh9kwVlmMdmCjd_jt41LRN4FBkdT6Jz1Y__67_UgGvczunhVywoR6aOd_isKl-oHwa3xfG9ftAgttqIH5MXcf0Rs_BOf6LQaoejckEXPmy1qd6cyHYJ0Zhx1vTzc5phR74xJduxrPmsMg5dBhECqKv1ZUUju5__6WGOfGNj6VPURgGRpumz7AK06g-Yxw1XnJA8p4oldJl7mOW10QTQA8zf-BW42mobu4b6fuRX0nUQuMM");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-2 text-secondary">
+                                <span class="material-symbols-outlined">public</span>
+                                <span
+                                    class="text-xs font-bold uppercase tracking-wider text-yellow-600 dark:text-yellow-500">The
+                                    Curious</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Cultural Discovery</h3>
+                            <p class="text-text-muted dark:text-gray-400">Discover the rich heritage behind every bite.
+                                Learn about the Venezuelan culture through food.</p>
+                        </div>
+                    </div>
+                    <!-- Explorer -->
+                    <div class="group cursor-pointer">
+                        <div class="overflow-hidden rounded-2xl aspect-[4/3] mb-6 relative">
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10">
+                            </div>
+                            <div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Modern plated fusion arepa dish"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6e8cujDMQTnlQ9-4eVOBr_TuasrR7YzE8L2jTfcUXyoo_svT2RkTjcUv7wsx8j87UmmFWI1sz3RWNwgsxgvGg7jHSujD5ysjGTSYhvXJLeKyhtOGMucfmQ9FpQKUiEbsMla9_7YXJFCdpMo2Hld59IxGnwui6OhRwRnlNIv_pKKSde1TsAW_Q7Kx66SXLw78A9DmDatMO4XEk2D4u99G6I-7k7pK9heGpzD72mLIowdlQiNagdg4vH4dl4NRcyD2w76iFcEtAC7I");'>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center gap-2 text-tertiary">
+                                <span class="material-symbols-outlined">explore</span>
+                                <span
+                                    class="text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">The
+                                    Explorer</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Flavor Adventure</h3>
+                            <p class="text-text-muted dark:text-gray-400">Experience bold, authentic Venezuelan
+                                gastronomy. For those who love trying something new.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Menu Teaser / Features -->
+            <section class="bg-gray-50 dark:bg-gray-900 py-20">
+                <div class="px-4 md:px-10 lg:px-20 max-w-[1280px] mx-auto">
+                    <div class="flex flex-col md:flex-row gap-12 items-center">
+                        <div class="flex-1 space-y-8">
+                            <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white leading-tight">
+                                Authentic. <span class="text-primary">Homemade.</span> Unforgettable.
+                            </h2>
+                            <p class="text-lg text-text-muted dark:text-gray-400">
+                                Our ingredients are fresh, our recipes are traditional, and our passion is real. Taste
+                                the difference of handmade Venezuelan cuisine, crafted daily in our kitchen.
+                            </p>
+                            <div class="flex flex-col gap-6">
+                                <!-- Feature 1 -->
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 shrink-0">
+                                        <span class="material-symbols-outlined">eco</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-gray-900 dark:text-white">Fresh Ingredients
+                                        </h4>
+                                        <p class="text-sm text-text-muted dark:text-gray-400">Locally sourced produce
+                                            meets imported authentic spices.</p>
+                                    </div>
+                                </div>
+                                <!-- Feature 2 -->
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 shrink-0">
+                                        <span class="material-symbols-outlined">menu_book</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-gray-900 dark:text-white">Family Recipes</h4>
+                                        <p class="text-sm text-text-muted dark:text-gray-400">Passed down through
+                                            generations for that perfect taste.</p>
+                                    </div>
+                                </div>
+                                <!-- Feature 3 -->
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-primary shrink-0">
+                                        <span class="material-symbols-outlined">favorite</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-gray-900 dark:text-white">Made with Love</h4>
+                                        <p class="text-sm text-text-muted dark:text-gray-400">Every dish is prepared
+                                            with the warmth of a Venezuelan home.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-4">
+                                <button
+                                    class="bg-primary hover:bg-red-700 text-white px-8 py-3 rounded-lg text-base font-bold transition-all shadow-md inline-flex items-center gap-2">
+                                    See Full Menu
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex-1 w-full relative">
+                            <!-- Image Collage -->
+                            <div class="relative h-[500px] w-full">
+                                <div
+                                    class="absolute top-0 right-0 w-3/4 h-3/4 rounded-2xl overflow-hidden shadow-2xl z-10">
+                                    <img alt="Close up of a savory arepa"
+                                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        data-alt="Close up of a savory arepa being held"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM6Ehkr1FCAHoQA2mBMXE_c3QT0Djo1b3Ge-22kOaBEXSc11tscnKcZp62EOZAiiahN_qrlAd--BA3T7eBxM9q55DEfwthuwCo-MxmFzQp57At78PREzn3z3kwqy4CEJpbTBh3lP3vo91I50lUK-1-n8iUwSS6YR0nh1HVyiOI3hdZovQLcQPFl-PagLVFGx3A4txjL9RD98Mh3EZPb4UQLLAWFq3X2QY-3tfKoLNvDiW_BWHST93TheLokQPQyzoKAsOm45QFriU" />
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-2xl overflow-hidden shadow-2xl border-8 border-gray-50 dark:border-gray-900 z-20">
+                                    <img alt="Hands preparing dough"
+                                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        data-alt="Chef preparing fresh dough for arepas"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuApKqUekbmozYtTiDogJ_yhN6U_UTL8zJo-6tVJouT8wxsgTnuVTTwGR0z-2GUdbxL5wKx_f97LS-mqYe09C76Yn1-9Bhn1hy0gkhnh9-8lhOU9nlrm_skmH6azBUpQBAOdV5ryqVDW3bP02-epjHOf9UQl0FEYypVevRbZQXZxNdMEJnoQxkxg0PobPwgqOJPVG1Kaz0CbViiGejz5XYWZTReqCt59Z21FKCOmJbAXlqvPqnO609WqWdlLxt96-XLvoEWdn74t3Ao" />
+                                </div>
+                                <!-- Decorative Badge -->
+                                <div
+                                    class="absolute top-10 left-10 bg-secondary text-yellow-900 p-4 rounded-full shadow-lg z-30 font-bold text-center w-24 h-24 flex items-center justify-center transform -rotate-12">
+                                    <span class="text-sm leading-tight">Since<br /><span
+                                            class="text-xl" data-content="founded_year">2023</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-background-dark text-white py-16">
+            <div class="px-4 md:px-10 lg:px-20 max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <!-- Brand -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 text-primary">
+                                <svg class="w-full h-full" fill="none" viewbox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-xl font-bold" data-content="business_name">Arepa Station</h2>
+                        </div>
+                        <p class="text-gray-400 text-sm" data-content="footer_description">
+                            Bringing the authentic taste of Venezuela to Virginia. A cultural bridge built on masa and
+                            love.
+                        </p>
+                        <div class="flex gap-4 mt-2">
+                            <a class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors"
+                                href="#">
+                                <span class="text-xl font-bold">f</span>
+                            </a>
+                            <a class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors"
+                                href="#">
+                                <span class="text-xl font-bold">in</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Links -->
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-lg font-bold">Explore</h3>
+                        <div class="flex flex-col gap-2">
+                            <a class="text-gray-400 hover:text-white transition-colors" href="#">Home</a>
+                            <a class="text-gray-400 hover:text-white transition-colors" href="#">Full Menu</a>
+                            <a class="text-gray-400 hover:text-white transition-colors" href="#">Our Story</a>
+                            <a class="text-gray-400 hover:text-white transition-colors" href="#">Catering</a>
+                            <a class="text-gray-400 hover:text-white transition-colors" href="#">Careers</a>
+                        </div>
+                    </div>
+                    <!-- Contact -->
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-lg font-bold">Visit Us</h3>
+                        <div class="flex flex-col gap-3 text-gray-400">
+                            <div class="flex items-start gap-3">
+                                <span class="material-symbols-outlined mt-1 text-primary">location_on</span>
+                                <p data-content="address">123 Broad Street,<br />Glen Allen, VA 23060</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">phone</span>
+                                <p data-content="phone">(804) 555-0123</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">mail</span>
+                                <p data-content="email">hello@arepastation.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hours -->
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-lg font-bold">Opening Hours</h3>
+                        <div class="flex flex-col gap-2 text-gray-400 text-sm" id="hours-container">
+                            <div class="flex justify-between border-b border-gray-800 pb-2">
+                                <span>Mon - Thu</span>
+                                <span>11:00 AM - 9:00 PM</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gray-800 pb-2">
+                                <span>Fri - Sat</span>
+                                <span>11:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="flex justify-between pb-2">
+                                <span>Sunday</span>
+                                <span>12:00 PM - 8:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                    <p>© <span data-content="copyright_year">2023</span> <span data-content="business_name">Arepa Station</span>. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Sticky Floating Button -->
+        <a class="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:-translate-y-1 hover:scale-105 group"
+            href="#">
+            <span class="material-symbols-outlined text-3xl">chat</span>
+            <span
+                class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:ml-2 transition-all">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- ✅ DATA LOADER: carga data.json y popula el sitio -->
+    <script>
+        async function loadSiteData() {
+            try {
+                const res = await fetch('/data.json');
+                const d = await res.json();
+
+                // Poblar todos los elementos con data-content
+                document.querySelectorAll('[data-content]').forEach(el => {
+                    const key = el.getAttribute('data-content');
+                    if (d[key] !== undefined) el.textContent = d[key];
+                });
+
+                // Título de la página
+                const titleEl = document.querySelector('title[data-content="title"]');
+                if (titleEl) titleEl.textContent = `${d.business_name} - ${d.tagline}`;
+
+                // Horarios dinámicos
+                const hoursContainer = document.getElementById('hours-container');
+                if (hoursContainer && d.hours) {
+                    hoursContainer.innerHTML = d.hours.map((h, i) => `
+                        <div class="flex justify-between ${i < d.hours.length - 1 ? 'border-b border-gray-800 pb-2' : 'pb-2'}">
+                            <span>${h.days}</span>
+                            <span>${h.time}</span>
+                        </div>`).join('');
+                }
+
+                // WhatsApp button
+                const waBtn = document.querySelector('a[href="#"].fixed');
+                if (waBtn && d.whatsapp) {
+                    waBtn.href = `https://wa.me/${d.whatsapp}`;
+                }
+
+            } catch (e) {
+                console.log('Usando contenido por defecto', e);
+            }
+        }
+        loadSiteData();
+    </script>
+</body>
+</html>
